@@ -47,8 +47,8 @@ int main(int argc, char *argv[])
         }
     }
 */
-    while( (counte = fread(buf, 1, SIZE, sfp)) > 0 )
-        fwrite(buf, 1, SIZE, dfp)
+    while( (count = fread(buf, 1, SIZE, sfp)) > 0 )
+        fwrite(buf, 1, SIZE, dfp);
 
     fclose(sfp);
     fclose(dfp);
