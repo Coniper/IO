@@ -1,9 +1,7 @@
-# C 语言 I/O 练习
+# I/O：从 stdio 到文件描述符
 
-记录标准 I/O 与 Linux 文件 I/O 的基础实验。源代码按学习时的日期分在三个目录中：
+这些代码是我学 C 文件操作和 Linux I/O 时留下的。目录仍按当时的 `1day`、`2day`、`3day` 命名，没有刻意改成课程章节。
 
-- [1day](./1day)：缓冲区、`fflush`、`fopen`、`fclose`、字符读写等。
-- [2day](./2day)：文件流读写、`fread` / `fwrite`、文件位置、错误与结束状态等。
-- [3day](./3day)：`open`、`read`、`write`、`lseek`、目录操作，以及简易 `cat` / `ls` 练习。
+`1day` 主要练 `fopen`、`fclose`、缓冲区和字符读写；`2day` 接着练 `fread`、`fwrite`、文件位置和错误判断；`3day` 转到 `open`、`read`、`write`、`lseek` 等系统调用，还写了简化版的 `cat`、`ls`。
 
-这是学习记录而非通用 I/O 库，部分示例依赖 Linux/POSIX 接口。
+同样是“读写文件”，标准库和系统调用的接口不一样。我保留这些小例子，查某个函数时比翻整套工程方便。涉及 Linux 接口的代码，别当成跨平台程序用。
